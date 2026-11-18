@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roei Grumet — Apps</title>
+<meta name="description" content="Mobile apps by Roei Grumet, an independent developer based in Israel: WiziWords and WiziCalc.">
+<style>
+  :root{
+    --ink:#1d2733;
+    --ink-soft:#4a5768;
+    --paper:#fbfcfe;
+    --card:#ffffff;
+    --accent:#2f6fed;
+    --accent-soft:#e8effd;
+    --line:#e3e8f0;
+    --sans:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    font-size:16px;
+  }
+  header{
+    background:linear-gradient(135deg,#12325e 0%,#2f6fed 100%);
+    color:#fff;
+    padding:64px 24px 72px;
+  }
+  .wrap{max-width:860px;margin:0 auto;}
+  .eyebrow{
+    font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    font-size:13px;opacity:.85;
+  }
+  header h1{font-size:clamp(30px,5vw,42px);font-weight:600;margin:10px 0 8px;}
+  header p{opacity:.9;max-width:560px;}
+
+  main{max-width:860px;margin:-36px auto 72px;padding:0 24px;display:grid;gap:20px;}
+  .app{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:28px 32px;
+    box-shadow:0 8px 30px rgba(29,39,51,.06);
+  }
+  @media(max-width:600px){.app{padding:22px 20px;}}
+  .app h2{font-size:22px;font-weight:600;}
+  .app .tagline{color:var(--ink-soft);margin:4px 0 18px;}
+  .row{display:flex;flex-wrap:wrap;gap:10px;}
+  .btn{
+    display:inline-block;padding:9px 16px;border-radius:999px;
+    font-size:14px;font-weight:600;text-decoration:none;
+  }
+  .btn.store{background:var(--accent);color:#fff;}
+  .btn.store:hover{background:#2560d6;}
+  .btn.legal{background:var(--accent-soft);color:var(--accent);}
+  .btn.legal:hover{text-decoration:underline;}
+  .divider{height:1px;background:var(--line);margin:18px 0 14px;}
+
+  .contact{
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:22px 32px;
+  }
+  @media(max-width:600px){.contact{padding:20px;}}
+  .contact h2{font-size:16px;font-weight:600;margin-bottom:4px;}
+  .contact a{color:var(--accent);font-weight:600;text-decoration:none;}
+  .contact a:hover{text-decoration:underline;}
+
+  footer{text-align:center;font-size:13px;color:var(--ink-soft);padding:0 24px 40px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Independent app developer</div>
+    <h1>Roei Grumet</h1>
+    <p>Simple, focused mobile apps for iOS and Android, built in Israel.</p>
+  </div>
+</header>
+
+<main>
+
+  <section class="app" aria-labelledby="wiziwords">
+    <h2 id="wiziwords">WiziWords</h2>
+    <p class="tagline">Grow your English vocabulary, one word at a time, with example sentences and translations.</p>
+    <div class="row">
+      <a class="btn store" href="https://apps.apple.com/app/id6797330007">App Store</a>
+      <a class="btn store" href="https://play.google.com/store/apps/details?id=com.roygim.wiziwords">Google Play</a>
+    </div>
+    <div class="divider"></div>
+    <div class="row">
+      <a class="btn legal" href="/wiziwords-legal/wiziwords-privacy-policy.html">Privacy Policy</a>
+      <a class="btn legal" href="/wiziwords-legal/wiziwords-terms-of-service.html">Terms of Service</a>
+    </div>
+  </section>
+
+  <section class="app" aria-labelledby="wizicalc">
+    <h2 id="wizicalc">WiziCalc</h2>
+    <p class="tagline">Estimate when your workday ends based on your start time and daily work hours.</p>
+    <div class="row">
+      <a class="btn store" href="https://apps.apple.com/app/id6751927370">App Store</a>
+      <a class="btn store" href="https://play.google.com/store/apps/details?id=com.roygim.wizi">Google Play</a>
+    </div>
+    <div class="divider"></div>
+    <div class="row">
+      <a class="btn legal" href="/wizicalc-legal/wizicalc-privacy-policy.html">Privacy Policy</a>
+      <a class="btn legal" href="/wizicalc-legal/wizicalc-terms-of-service.html">Terms of Service</a>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="contact">
+    <h2 id="contact">Contact</h2>
+    <p>Questions or support: <a href="mailto:roygim@gmail.com">roygim@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>&copy; 2026 Roei Grumet</footer>
+
+</body>
+</html>
